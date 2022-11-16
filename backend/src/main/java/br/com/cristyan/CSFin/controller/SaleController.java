@@ -4,11 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.cristyan.CSFin.dao.SaleDao;
+import br.com.cristyan.CSFin.dao.SmsDao;
 import br.com.cristyan.CSFin.model.Sale;
 
 @RestController
@@ -17,6 +19,8 @@ public class SaleController {
 	
 	@Autowired
 	private SaleDao saleDao;
+	@Autowired
+	private SmsDao smsDao;
 	
 	@GetMapping
 	public Page<Sale> findSales(
@@ -24,6 +28,12 @@ public class SaleController {
 			@RequestParam(name = "maxDate", defaultValue = "")String maxDate,
 			Pageable pageable){
 		return saleDao.findSales(minDate, maxDate, pageable);
+	}
+	
+	
+	@GetMapping(value = "/{id}/notification")
+	public void notifySms(@PathVariable Long id) {
+		smsDao.sendSms(id);
 	}
 	
 }
