@@ -12,7 +12,7 @@ type Props = {
 }
 
 function handleClick (id :Props) {
-    axios.get(`${BASE_URL}/sale/${id.saleId}/notification`)
+    axios.get(`https://cs-fin.herokuapp.com/sale/${id.saleId}/notification`)
         .then(response => {
             toast.success("SMS enviado com sucesso");
         });
