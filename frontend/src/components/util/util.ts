@@ -1,1 +1,2 @@
-export const BASE_URL = "https://cs-fin.herokuapp.com";
+export const BASE_URL = process.env.REACT_APP_URL_BASE;
+
