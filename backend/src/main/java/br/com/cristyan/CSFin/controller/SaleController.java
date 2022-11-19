@@ -24,8 +24,8 @@ public class SaleController {
 	
 	@GetMapping
 	public Page<Sale> findSales(
-			@RequestParam(name = "minDate", defaultValue = "")String minDate,
-			@RequestParam(name = "maxDate", defaultValue = "")String maxDate,
+			@RequestParam(name = "minDate", defaultValue = "") String minDate,
+			@RequestParam(name = "maxDate", defaultValue = "") String maxDate,
 			Pageable pageable){
 		return saleDao.findSales(minDate, maxDate, pageable);
 	}
