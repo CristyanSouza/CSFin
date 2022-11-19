@@ -9,6 +9,9 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <>
+      <head>
+      <title>CSFin</title>
+      </head>
       <ToastContainer />
       <Header />
       <main>
