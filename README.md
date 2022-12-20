@@ -32,7 +32,7 @@ No projeto foi criada uma API de vendas realizadas, os dados estão armazenados 
 ## 📺 Vídeo do projeto funcionando
 
 
-https://www.linkedin.com/posts/cristyan-de-souza-99a003183_java-react-backend-activity-6999796606162120704-bU--?utm_source=share&utm_medium=member_desktop
+https://www.linkedin.com/posts/cristyan-de-souza-99a003183_java-mysql-springboot-activity-7010755897127776256-53Nq?utm_source=share&utm_medium=member_desktop
 
 
 ## 🚀 Como executar o projeto
