@@ -28,6 +28,13 @@ No projeto foi criada uma API de vendas realizadas, os dados estão armazenados 
 ![image](https://user-images.githubusercontent.com/104795862/208689989-5ca5fef1-efc1-44b4-bef4-a4247b7ee4af.png)
 
 
+
+## 📺 Vídeo do projeto funcionando
+
+
+https://www.linkedin.com/posts/cristyan-de-souza-99a003183_java-react-backend-activity-6999796606162120704-bU--?utm_source=share&utm_medium=member_desktop
+
+
 ## 🚀 Como executar o projeto
 
 Este projeto é divido em duas partes:
